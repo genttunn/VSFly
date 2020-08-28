@@ -1,0 +1,47 @@
+﻿@model IEnumerable<VSFlyClient.Models.DestinationBookingsVM>
+
+@{
+    ViewData["Title"] = "DestinationBookingsDetails";
+}
+
+<h1>Destination Booking Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                Given Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightID)
+            </th>
+            <th>
+                Purchase Price
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GivenName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchasePrice)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <a asp-action="DestinationBookings">Back to destination list</a>
+</div>

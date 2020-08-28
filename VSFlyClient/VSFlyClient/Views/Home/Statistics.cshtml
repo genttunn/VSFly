@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<div class="container">
+    <div class="row mt-lg-5">
+        <div class="col-lg-4">
+            <button class="btn btn-default center-block" onclick="location.href='@Url.Action("TicketSales", "Home")'">
+                <img src="~/resources/ticketsales.png" alt="ticketSales" style="width:200px;height:200px;border-radius:8px">
+            </button>
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-default center-block" onclick="location.href='@Url.Action("DestinationAvg", "Home")'">
+                <img src="~/resources/avgdest.png" alt="avgDestination" style="width:200px;height:200px;border-radius:8px">
+            </button>
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-default center-block" onclick="location.href='@Url.Action("DestinationBookings", "Home")'">
+                <img src="~/resources/bookingsdest.png" alt="bookingDestination" style="width:200px;height:200px;border-radius:8px">
+            </button>
+        </div>
+    </div>
+</div>
+
